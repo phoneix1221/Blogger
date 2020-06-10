@@ -1,0 +1,19 @@
+{% extends "maintemplate.html" %}
+{% block content %}
+<h2>My posts</h2>
+       {% for datas in data %}
+        <article class="media content-section">
+                <div class="media-body">
+                  <div class="article-metadata">
+                    <a class="mr-2" href="#">{{ datas.by }}</a>
+                    <small class="text-muted">{{ datas.Date }}</small>
+                  </div>
+                  <h2><a class="article-title" href="#">{{ datas.Title }}</a></h2>
+                  <p class="article-content">{{  datas.shortdesc }}</p>
+                  <a id='webview' class="btn btn-primary" href="/Edit/{{datas.id}}">Edit</a>
+                  <a id='webview' class="btn btn-primary" href="/Delete/{{datas.id}}">Delete</a>
+              </article>
+        {%endfor%}
+     
+
+{% endblock %}

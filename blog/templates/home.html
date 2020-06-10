@@ -1,0 +1,17 @@
+{% extends "maintemplate.html" %}
+{% block content %}
+       {% for datas in data %}
+        <article class="media content-section" >
+                <div class="media-body">
+                  <div class="article-metadata">
+                    <a class="mr-2" href="#">{{ datas.by }}</a>
+                    <small class="text-muted">{{ datas.Date }}</small>
+                  </div>
+                  <h2><a class="article-title" href="/show/{{datas.id}}">{{ datas.Title }}</a></h2>
+                  <p class="article-content">{{  datas.shortdesc }}</p>
+                </div>
+              </article>
+        {%endfor%}
+     
+
+{% endblock %}

@@ -9,4 +9,8 @@ Features
 3) guest users can read blogs
 
 Requirements
+
 Requirements can be install using requirements.txt
+
+Run app through flask and create schema same as the project in strapi 
+

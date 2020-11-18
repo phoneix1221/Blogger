@@ -90,19 +90,19 @@ def account():
 
 @app.route("/foo",methods=['GET', 'POST'])
 def sendmail(): 
-    api_key = 'ed7c842e32a26a4c2d6dc220c784d0cc'
-    api_secret = 'c6a0c6ba6461173404196a258ae02739'
+    api_key = ''
+    api_secret = ''
     mailjet = Client(auth=(api_key, api_secret), version='v3.1')
     data = {
     'Messages': [
          {
         "From": {
-            "Email": "mayankjoshi996007@gmail.com",
+            "Email": "",
             "Name": "Mayank"
          },
         "To": [
              {
-            "Email": "mayankjoshi996007@gmail.com",
+            "Email": "",
             "Name": "MJ"
             }
         ],

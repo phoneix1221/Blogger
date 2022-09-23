@@ -39,7 +39,7 @@ mccabe==0.6.1
 numpy==1.18.2
 pandas==1.0.3
 parse==1.15.0
-protobuf==3.11.3
+protobuf==3.18.3
 public==2019.4.13
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
